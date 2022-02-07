@@ -1,15 +1,18 @@
 import React from 'react';
-import Button from '@mui/material/Button'
+import Button from '@mui/material/Button';
+import { makeStyles, ThemeProvider } from '@mui/styles';
+import theme from './temaConfig';
+import NavBar from './components/NavBar';
 
 
 function App() {
   return (
-    <div>
-      holaaaaaaaaa
-     <Button variant="contained" color="default">
+    <ThemeProvider theme={theme}>      
+    <NavBar />
+     <Button variant="contained">
        Esto es botón
     </Button>
-    </div>
+    </ThemeProvider>
   );
 }
 
